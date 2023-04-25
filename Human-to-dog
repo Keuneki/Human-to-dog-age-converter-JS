@@ -1,0 +1,17 @@
+
+
+function humanToDogYears(humanAge) {
+  if (humanAge <= 0) {
+    return 0; 
+  } else if (humanAge === 1) {
+    return 15; 
+  } else if (humanAge === 2) {
+    return 24;
+  } else {
+    return 24 + (humanAge- 2) * 5;
+  }
+}
+
+const humanAge = 4;
+const dogAge = humanToDogYears(humanAge);
+console.log(`If you are ${humanAge} years old in human years, you are ${dogAge} years old in dog years.`);
